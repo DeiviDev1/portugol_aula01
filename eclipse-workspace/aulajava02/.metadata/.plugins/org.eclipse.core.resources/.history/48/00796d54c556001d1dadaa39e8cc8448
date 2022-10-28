@@ -1,0 +1,41 @@
+package boletim;
+
+import java.util.Scanner;
+
+public class Cadastro {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		String sigla;
+		
+		System.out.println("Insira a sigla do seu estado com letra MAIUSCULA: ");
+		sigla = leia.nextLine();
+		
+		
+		switch(sigla) {
+		case "SP":
+			System.out.println("VC É DE SAO PAULO ");
+			break;
+		case "DF":
+			System.out.println("VC É Do distrito federal ");
+			break;	
+		case "BA":
+			System.out.println("VC É DA BAHIA ");
+			break;		
+			
+		case "RS":
+			System.out.println("VC É Do RIO G DO SUL ");
+			break;	
+			
+		
+			default:
+				System.out.println("sigla nao reconhecida ");
+			
+		     }
+		
+      	
+		
+	}
+
+}

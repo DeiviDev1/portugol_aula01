@@ -1,0 +1,53 @@
+package boletim;
+
+import java.util.Scanner;
+
+public class Boletim {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner leia = new Scanner(System.in);
+		float nota01, nota02, media =0;
+		boolean resposta ;
+		
+		System.out.println("Insira a primeira nota: ");
+		nota01 = leia.nextFloat();
+		System.out.println("Insira a segunda nota: ");
+		nota02 = leia.nextFloat();
+		
+		if (nota01 !=0 && nota02 != 0) {
+			media = (nota01 + nota02)/2;
+			if(media >=7 )
+		    {
+			System.out.println("A sua média é maior ou igual a 7!"+ media);
+	   }else {
+			System.out.println("A sua média foi menor que 7!" + media );
+	        }
+		} else {
+				System.out.println("A nota deve ser superior que 0; " );
+				}
+		
+			
+		}
+		
+		
+		
+	
+		//resposta = media >= 7;
+		
+		//if(media >=7 )
+		   // {
+			//System.out.println("A sua média é maior ou igual a 7!");
+	  // }else {
+		//	System.out.println("A sua média foi menor que 7!");
+	     //   }
+		
+		
+		//System.out.println("A media foi: " + media);
+	    //System.out.println("O valor da média é maior ou igual a 7? "+ resposta);//
+		
+		
+	}
+
+

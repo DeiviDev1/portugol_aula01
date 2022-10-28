@@ -1,0 +1,23 @@
+package boletim;
+
+import java.util.Scanner;
+
+public class Boletim {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner leia = new Scanner(System.in);
+		float nota01, nota02, media;
+		
+		System.out.println("Insira a primeira nota: ");
+		nota01 = leia.nextFloat();
+		System.out.println("Insira a segunda nota: ");
+		nota02 = leia.nextFloat();
+		
+		media = (nota01 + nota02/2);
+		
+		
+	}
+
+}
